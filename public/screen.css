@@ -15,10 +15,25 @@ body {
 header {
   background-color: #fff;
   font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba(0, 0, 0, .15);
+  box-shadow: 0 0.5rem 1.25rem rgb(0 0 0 / 5%);
 }
 
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul{
+  display: flex;
+  align-items: center;
+  width: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 header ul {
@@ -28,8 +43,35 @@ header ul {
 header li a {
   text-decoration: none;
   color: #24292e;
+  padding-left: 0.5rem;
+  padding-right: 0.3rem;
 }
 
-.home {
+article {
+  background-color: #fff;
+}
+
+article li {
+  list-style: none;
+}
+
+article li a {
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+  color: #24292e;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+footer {
+  width: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-top: 40px;
+  border-top: 1px #e1e4e8 solid;
+  font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
   color: #586069;
 }
