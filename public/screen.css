@@ -13,10 +13,12 @@ body {
 }
 
 header {
-  background-color: #fff;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.75);
   font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
   margin-bottom: 40px;
-  border-bottom: 1px solid rgba(0, 0, 0, .15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   box-shadow: 0 0.5rem 1.25rem rgb(0 0 0 / 5%);
   display: flex;
   justify-content: space-between;
@@ -25,13 +27,15 @@ header {
 }
 
 header nav {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  top: 0;
   width: auto;
 }
 
-header nav ul{
+header nav ul {
   display: flex;
   align-items: center;
+  background-color: rgba(255, 255, 255, 0);
   width: auto;
   padding-left: 24px;
   padding-right: 24px;
@@ -39,20 +43,28 @@ header nav ul{
   margin-left: auto;
 }
 
-
 header ul {
   list-style: none;
 }
 
-header li a {
+header li a:link,
+header li a:visited {
   text-decoration: none;
   color: #24292e;
   padding-left: 0.5rem;
   padding-right: 0.3rem;
+  font-size: 14px;
 }
 
-.octodex {
+header li.active a:link,
+header li.active a:visited {
+  color: #586069;
+}
+
+header li.octodex a:link,
+header li.octodex a:visited {
   font-weight: 600;
+  font-size: 16px;
 }
 
 main {
@@ -64,7 +76,7 @@ section {
   flex-wrap: wrap;
 }
 
-.image{
+.image {
   border: 1px solid #b8babd;
   border-radius: 10px;
 }
@@ -78,17 +90,18 @@ article {
 }
 
 section article ul {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 0; 
+  padding: 0;
 }
 
 article li {
   list-style: none;
+  margin: 0;
 }
 
-article li a {
+article li a:link,
+article li a:visited {
   font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
   color: #24292e;
   font-size: 14px;
