@@ -39,6 +39,7 @@ header nav ul{
   margin-left: auto;
 }
 
+
 header ul {
   list-style: none;
 }
@@ -63,7 +64,7 @@ section {
   flex-wrap: wrap;
 }
 
-article img{
+.image{
   border: 1px solid #b8babd;
   border-radius: 10px;
 }
@@ -77,6 +78,7 @@ article {
 }
 
 section article ul {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 0; 
