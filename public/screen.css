@@ -157,13 +157,6 @@ footer p {
   }
 }
 
-@media (min-width: 544px) {
-  section {
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-
 @media (max-width: 425px) {
   .image {
     max-width: 359px;
@@ -175,6 +168,13 @@ footer p {
   .image {
     max-width: 309px;
     max-height: 309px;
+  }
+}
+
+@media (min-width: 371px) {
+  section {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
