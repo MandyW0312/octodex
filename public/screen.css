@@ -75,6 +75,7 @@ main {
 section {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .image {
@@ -133,6 +134,13 @@ footer p {
     position: absolute;
     top: 0px;
     left: -5000px;
+  }
+}
+
+@media (min-width: 1914px) {
+  section {
+    padding-right: 184px;
+    padding-left: 184px;
   }
 }
 
